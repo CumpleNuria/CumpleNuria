@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Celebración</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<header class="hero">
+    <h1>JODER TÚ, QUE ME CAEN 30</h1>
+    <p>Así que nada, tocará celebrarlo ¿no? Si estáis leyendo esto es porque me conocéis muy bien, o al menos, un poquito... Por eso, ya sabéis que yo soy "una Montoyita" y que me gusta mezclar a todo el mundo, familia, amigos...síii hasta los niños son bienvenidos!! Si has llegado hasta aquí es porque este día NO PUEDES FALTAR, así que venga, vamos, que te lleva medio minuto confirmarme tu asistencia. </p>
+</header>
+
+    <img src="img/Nuria’s (1).png" alt="foto">
+
+<section class="info">
+    <h2>¿DÓNDE, CÓMO, CÚANDO?</h2>
+    <p><strong>Fecha:</strong> Sábado 27 Junio APÚNTALO YA</p>
+    <p><strong>Hora:</strong> 20:00</p>
+    <p><strong>Lugar:</strong> Mama Campo Olavide</p>
+</section>
+
+<section class="mapas">
+    <h2>NOS VEMOS EN...</h2>
+
+    <div class="mapa">
+        <h3>Cocktail</h3>
+        <iframe src="https://www.google.com/maps?q=restaurante+madrid&output=embed"></iframe>
+        <a class="btn-maps" target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=restaurante+madrid">
+            📍 Cómo llegar
+        </a>
+    </div>
+
+    <div class="mapa">
+        <h3>Sí te sientes con fuerza, la juventud (bueno quien quiera eh), nos iremos a continuar el saraito aquí</h3>
+        <iframe src="https://www.google.com/maps?q=discoteca+madrid&output=embed"></iframe>
+        <a class="btn-maps" target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=discoteca+madrid">
+            📍 Cómo llegar
+        </a>
+    </div>
+</section>
+
+<section class="formulario">
+    <h2>DIME QUE SÍ QUE VIENES</h2>
+
+    <form action="php/guardar.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellido" required>
+
+        <textarea name="alergias" placeholder="Alergias"></textarea>
+        <textarea name="peticiones" placeholder="Peticiones"></textarea>
+
+        <select name="asiste">
+            <option value="1">Asistiré</option>
+            <option value="0">No asistiré</option>
+        </select>
+
+        <select name="fiesta">
+            <option value="1">Iré a la fiesta</option>
+            <option value="0">No iré</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<section class="playlist-section">
+    <h2>🎧 Playlist</h2>
+    <p>En cabina tendremos a DJ R.Goizueta pero vamos a echarle una manita, añade aquí las canciones que no pueden faltar durante el cocktail</p>
+
+    <a class="spotify-button"
+       href="https://open.spotify.com/playlist/6TCG8AuXlFyyf2zGvu6XeA"
+       target="_blank">
+        Abrir Spotify 🎶
+    </a>
+</section>
+
+<section class="drive-section">
+    <h2>📸 Fotos y vídeos</h2>
+    <p>Todos seréis los mejores fotógrafos, por ello no os olvidéis de subir todo aquí después de la resaquita</p>
+
+    <a class="drive-button"
+       href="https://drive.google.com/drive/folders/1iAnLPE6TrWNwZvBR0rH5Y7l5f0ZF-F7R?usp=drive_link"
+       target="_blank">
+        Abrir Drive 📂
+    </a>
+</section>
+
+<section class="qr">
+    <h2>Acceso rápido</h2>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://localhost/cumple">
+</section>
+
+<footer>
+    <p>Evento 2026</p>
+</footer>
+
+<div id="successModal" class="modal hidden">
+    <div class="modal-content">
+        <div class="icon">✔</div>
+        <h2>¡Confirmado!</h2>
+        <p>Tu asistencia ha sido registrada</p>
+        <button onclick="closeModal()">Cerrar</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
